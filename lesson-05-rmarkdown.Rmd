@@ -688,8 +688,6 @@ note: Rmarkdown seems to have a hickup regarding crossreferences. Please change 
 
 `output: bookdown::html_document2`
 
-(install the bookdown package if needed)
-
 If you label parts of your RMarkdown, you can refer to them later! For instance, if you give names to code chunks, you can refer to them:
 
 See Figure `\@ref(fig:cars-plot)`
