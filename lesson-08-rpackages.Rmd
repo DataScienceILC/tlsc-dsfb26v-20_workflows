@@ -109,7 +109,7 @@ If everything went well you now have created an R package (probably your first),
 
 <div class="question">
 ##### Exercise `r les` {-} 
-After creating your commits and pushing to Github, try installing your own `{foofactors}` R package, using the function `devtools::install_github(<github_account_name/package_name>)` 
+After creating your commits and pushing to Github, try installing your own `{foofactors}` R package, using the function `devtools::install_github("github_account_name/package_name")` 
 </div>
 
 ## Start with an RMarkdown file
@@ -189,7 +189,7 @@ Use this code to check the name you would like to use:
 
 ```{r, eval=FALSE}
 library(available)
-available(<your_intended_package_name>)
+available("your_intended_package_name")
 ```
 
 **To pass this assignment, your new package should at least include:**
