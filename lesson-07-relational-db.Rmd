@@ -1252,7 +1252,7 @@ dbDisconnect(con)
  
 **Assignment**
  
- 1. Load the flu ("./data/flu_data.csv), the dengue ("./data/dengue_data.csv) and the gapminder (`{dslabs}` package) into three separate dataframes in R
+ 1. Load the flu (in the github repo for this course: https://github.com/DataScienceILC/tlsc-dsfb26v-20_workflows go to  ./data/flu_data.csv), the dengue ("./data/dengue_data.csv) and the gapminder (`{dslabs}` package) into three separate dataframes in R
  
  1. Check if they are in the right shape. Is the data in the 'tidy' format? If not change the format to 'tidy' 
  
