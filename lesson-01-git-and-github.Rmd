@@ -21,6 +21,35 @@ Before you continue with this lesson, make sure you have done the following:
 - You have [installed Git](https://git-scm.com/downloads) on your computer.
 - You have [created a GitHub account](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home). 
 
+## Before you start! 
+A reminder of the exercise and assignment directives.
+
+Within the lesson you will encounter a number of exercises. 
+
+Please answer all the assignments and exercises in an RMarkdown document. You learned how to make one in DAUR1. Save it somewhere in your **course project**. 
+
+**Most lessons have portfolio assignments!**
+Save those for now as separate .Rmd files in a **portfolio-project**.
+
+<div class="tip">
+So, you will have at least 3 R projects (file --> new project...) going on this semester: one for all the regular exercises in the lessons. One for your portfolio. A third one for projecticum. 
+
+We suggest to call them:
+
+ 1. `dsfb2_workflows_exercises`
+ 2. `dsfb2_workflows_portfolio`
+ 3. `dsfb2_research_project`
+ 
+**Start by setting these projects up in your RStudio environment (server or local)**  
+
+Once you are done doing this, you are ready to start this course!
+
+Note: There will be a portfolio exercise at the end of each lesson. For each portfolio exercise, make a new .Rmd file within your _portfolio project.
+
+</div>
+
+
+
 ## Why Git and GitHub?
 
 To explain why Git and GitHub are so important, let us look at an example. Suppose you are analyzing some data for your internship using R. You have written an R script to perform the data analysis and the script is working. However, one day you decide to make some changes to the script in order to make the computations a bit faster. You work the whole day on the code and at the end of the day you try if the code is working as expected. Unfortunately, it is not working as expected. But the code was working before. It would be great if you could go back to the previous version of the code. Or if you could easily see the changes you made, to find out why your script stopped working. 

@@ -33,7 +33,10 @@ library(readxl)
 ```
 
 ## Aim of this lesson
-After this lesson you will be familiar with the most important data management guidelines and principles: 
+After this lesson you will be familiar with agile working:
+
+
+And with the most important data management guidelines and principles: 
 
  1. Proper file naming strategies
  1. Guerrilla Analytics principles
@@ -44,6 +47,8 @@ After this lesson you will be familiar with the most important data management g
  1. Encoding variables & Exploratory Data Analysis
  1. Preparing your data for sharing
  1. Proprietary vs non-proprietary formats
+
+
 
 
 ## File names {#namingconv}

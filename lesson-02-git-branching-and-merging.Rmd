@@ -38,7 +38,6 @@ Kanban & automation
  - Labels
  - Milestones
  - Projects
- - using am agile workflow in general
 
 Pull requests
 
@@ -363,9 +362,8 @@ When working together in git/github, this flow is extremely important to agree u
 
 </div>
 
-
 ## Agile workflow
-*There will be a demo today*
+*There will be an interactive assignment today*
 
 [Adapted from Wikipedia - The free Ecyclopedia](https://en.wikipedia.org/wiki/Agile_software_development)
 
@@ -379,6 +377,8 @@ During the Data Science Projecticum, we will require you (within you project tea
 In practical sense, scrum is the collection of meetings and the tools used to administer the workload. The central tool that is being used to monitor all activities is called the 'Project Backlog'. You can look at this 'Project Backlog as the collection of all the work that needs to be done to complete the full project. Because the Agile way of work does not work with long term planning, but works according short cycles of developing a product, a service or perform a study, or involve stakeholders, the 'Project Backlog' is where all the team members go regularly together to agree on what needs to be done next.
 
 The short cycles of working on developing new features, running computations, performing experiments, interviewing customers and stake-holders and acquiring new tools are called 'Sprints'. In each sprint, which typically lasts 3 working weeks, a number of items from the Backlog are 'moved' to the so-called 'Sprint Backlog'. During regular weekly sessions discussion take place which items need to go from the 'Project Backlog' to the 'Sprint Backlog' in order to add value to the project. These sessions are called 'Sprint planning'. At the start of each sprint a single  
+
+We will have practiced Agile using an interactive assignment.
 
 
 ## Agile Workflow in github
@@ -491,9 +491,166 @@ The backlog then consists of all items (issues) that have no `milestone` attache
 
 </div>
 
-<div class = "dagopdracht">
-This lesson has no portfolio assignment. The exercises within this lesson of course help build your portfolio.
+
+
+
+## Bookdown {#bookdownportfolioa}
+
+At the end of this course, your portfolio assignments will have to be bundled into one portfolio website, hosted by github.
+
+The `{bookdown}` R package contains functions to bundle a collection of RMarkdown files in a website or a book, or a similar collection of information. It is based on RMarkdown and it's outpyut options (html, pdf, etc), but adds the possibility to make multi-page html websites and books sections, as well as cross-referencing across different .Rmd files. This website is rendered with bookdown. See some examples [here](https://bookdown.org/). Bookdown is used for any document that consists of multiple pages that are meant to be read in sequence, so books, readers, but also handouts, a thesis, graduation paper, a software manual, etc. And it *can* very well be used for multipage stuff that is not necessarily read sequentially, such as websites or a portfolio.
+
+
+<div class="question">
+##### Exercise `r les` {-}
+
+**A simple bookdown example**
+
+To start with bookdown, there is a [good and free resource available](https://bookdown.org/yihui/bookdown/get-started.html). 
+
+ -Download the example zip of the [minimal example here: click](https://github.com/yihui/bookdown-minimal)
+ -follow the steps in this link [(click)](https://bookdown.org/yihui/bookdown/get-started.html) and render the book.
+ -If you don't have a `build book` button in your build tab, make sure you are in the demo project!
+ 
+ ```{r, echo=FALSE, message=FALSE, fig.width=4 }
+knitr::include_graphics(here::here(
+    "images",
+    "build_book.png"
+  )
+)
+```
+ 
+
 </div>
+
+A bookdown book will consist of different chapters, each in their own .Rmd file (this is why you had to do this for your portfolio). The home page, or first page, is always index.Rmd, which contains the YAML header.
+
+Chapters are rendered in alphabetical + numerical order of their .Rmd file name. So if you want 3 chapters, you will have files like `ìndex.Rmd`, `01_introduction.Rmd`, `02_cv.Rmd` and `03_firstproject.Rmd`. Go ahead and check the files in the repo of this course if you like, and compare them to the reader online.
+
+File names that start with an underscore are skipped (in case you want to include files in the repo but not in the book for some reason).
+
+Each R Markdown file must start immediately with the chapter title using the first-level heading, e.g., `# Chapter Title`. So chapters will look somewhat like this:
+
+```
+# About me
+
+Stuff
+
+## Paragaph title
+
+More stuff
+
+## Paragraph I don't want numbered {-}
+
+bla
+
+### subparagraph be here
+
+more bla
+
+```
+
+<div class="question">
+##### Exercise `r les` {-}
+ - add two new pages to the example bookdown project.
+ - render the bookdown again (build book)
+</div>
+
+
+### bookdown::render_book()
+
+The `build book` button is calling a function: bookdown::render_book(). You need to check some boxes before this actually works. If you want to use the `build book` option in the future:
+
+ 1. Configure the build tools: Click on the menu button "Build" and then select "Configure build tools". You want to select "Website".
+ 1. Put this line in the YAML header: `site: bookdown::bookdown_site`
+
+But you know our opinion on having to click anything at all, so you can use the console instead, for instance:
+
+```
+bookdown::render_book(here::here("index.Rmd"), "bookdown::gitbook")
+bookdown::render_book("index.Rmd", "bookdown::pdf_book")
+```
+
+or simply try (really, try it. does it work?)
+
+```
+bookdown::render_book(".")
+```
+
+These options work if your chapter .Rmd files are in the project root directory (the one you see when you type `here::here()` in the console.)
+
+If you really want to keep your chapter files in a subdirectory, which we don't recommend, you can still render the book with:
+
+```
+xfun::in_dir('mapje/nogeenmapje', bookdown::render_book('index.Rmd'))
+```
+
+
+
+<div class="question">
+##### Exercise `r les` {-}
+
+**Transform your portfolio to a local bookdown site**
+
+During this course you will collect .Rmd files with the different portfolio exercises. If everything went well, you have these files collected in your portfolio RStudio project, linked to a Github repo.
+
+ - Using the minimal example bookdown as a template, make a folder (locally) that contains a index.Rmd file that will act as the home page for your portfolio.
+ - Start by rendering your project using `bookdown::render_book()` to see if it works.
+ - Add any portfolio .Rmd files you already generated to the folder. You can arrange the chapters by using file names like `001_<file_name>.Rmd`. 
+ - When you have build your `index.Rmd` file and have collected all files in the root of your project, be sure all depending data, scripts and other files such as images etc. are also present in the project. Use the guerrilla analytics logic to setup the project structure if you lost track of it. 
+ - Set the option `new_session: yes` in your `_bookdown.yml` or `index.Rmd` file. This prevent problems down the line. 
+ - Render the book until all errors are solved. You can debug each file and error by looking at the line numbers where the rendering is causing problems.
+
+</div>
+
+## Hosting the bookdown project in your github pages
+
+**IMPORTANT NOTE ON CONFIDENTIALITY**
+
+<mark>**When hosting you portfolio on a public web address, please make sure that there is no confidential information visable in your project. Data that falls under a non-disclosure agreement for example from your projecticum may not be shared. Also, be sure not to publish any personal secrets such as passwords and tokens, inside a github repo or webpage.**</mark> 
+
+
+### Github pages
+Each account on github can be associated to one or multiple websites that are hosted on Github.com. To setup a website on Github (also called `github-pages` or `gh-pages`), we need to create a repository with a special name. For this course we will require you to upload results from the portfolio assignments to you personal github pages. **This is a hard requirement for passing this course. If you have no or an empty portfolio, you cannot pass this course** You may add any Rmd's with the general exersizes in this course if you feel like you would like to showcase them in your portfolio.
+
+
+
+## Portfolio assignment `r paste0(les, " ")` {-}  
+<div class="dagopdracht">
+
+First read all the exam requirements [here in the reader](#portfolioexam) 
+
+**github pages**
+
+ - Execute the steps explained [here (click)](https://guides.github.com/features/pages/) to setup a github-pages repository called `myname-portfolio` or something similar.
+
+**NOTE: your github pages will be visible for everyone! Don't put anything on there you do not want the world to see. Including but not restricted to: your address, e-mail etc, data you have no permission for, code you don't want anyone to see (your teachers will still be able to see all code in your repo)**
+ 
+Once you have successfully rendered your bookdown to a full website, hosting can be achieved by copying all html files to your Github-pages. The easiest way is to:
+
+ 1. set your repo to private
+ 1. add your teachers as collaborators on the repo
+ 1. clone your github pages repo 
+ 1. copy all the html files rendered with bookdown to this folder
+ 1. commit and push all changes to your github pages repo. The website will be automatically updated after some time. 
+ 
+Make sure your portfolio looks professional, and flex your Rmarkdown and analysis skills: it is meant to be used with future job applications! (Also, it is part of your grade)
+
+ - Put your portfolio on your github pages
+
+
+</div>
+
+
+
+### More information
+For a complete manual on working with github pages, [see the gh-pages docs](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages) 
+
+If you want to go for a full continuous integration workflow (which is highly recommended), you can follow these steps in [this blog](https://medium.com/@delucmat/how-to-publish-bookdown-projects-with-github-actions-on-github-pages-6e6aecc7331e)
+
+
+
+
 
 ## Resources
 

@@ -80,7 +80,7 @@ The `{bookdown}` R package is basically a collection of RMarkdown files, collate
 To start with bookdown, there is a [good and free resource available](https://bookdown.org/yihui/bookdown/get-started.html). 
 
 ## Transform your current portfolio project to a bookdown site
-By now you should have collected several Rmd files for completing the exercises and assignments in the course thusfar. If everything went well, you have these files collected in your portfolio RStudio project, linked to a Github repo.
+Over the course you will collect several Rmd files for completing the exercises and assignments. If everything went well, you have these files collected in your portfolio RStudio project, linked to a Github repo.
 To start building your bookdown project, use the minimal example you have seen above. Start by rendering your project using `bookdown::render()`. To the very least you should have an index.html file that contains the yaml definitions for your bookdown project. You can arrange the chapters by using an index in every Rmd file. Use indexes like `001_<file_name>.Rmd`. When you want to add a chapter in between two chapters, this makes it easier. to achieve this.
 
 ## Render the book locally
