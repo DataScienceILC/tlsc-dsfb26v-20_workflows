@@ -2,7 +2,7 @@
 title: "Data Science Workflows Course" 
 subtitle: "HU OSIRIS: tlsc-dsfb26v-20_workflows"
 author: "Hogeschool Utrecht: Alyanne de Haan, Marc Teunis, Bas van Gestel"
-date: "2022/2023"
+date: "2023/2024"
 site: bookdown::bookdown_site
 output: 
     bookdown::gitbook:

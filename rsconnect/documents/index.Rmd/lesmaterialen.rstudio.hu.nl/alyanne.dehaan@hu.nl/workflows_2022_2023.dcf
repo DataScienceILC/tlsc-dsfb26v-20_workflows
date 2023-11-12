@@ -1,9 +1,10 @@
-name: data_science_for_biology_2-workflows
+name: workflows_2022_2023
 title:
 username: alyanne.dehaan@hu.nl
 account: alyanne.dehaan@hu.nl
 server: lesmaterialen.rstudio.hu.nl
 hostUrl: https://lesmaterialen.rstudio.hu.nl/__api__
-appId: 13
-bundleId: 439
-url: https://lesmaterialen.rstudio.hu.nl/workflows-reader/
+appId: 32
+bundleId: 437
+url: https://lesmaterialen.rstudio.hu.nl/content/00d4ac4f-7364-43b2-8325-68221c5da0e4/
+version: 1

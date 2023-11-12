@@ -31,7 +31,7 @@ library(glue)
 library(readxl) 
 library(httr) 
 library(zoo)
-library(blscrapeR)
+#library(blscrapeR)
 ```
 
 ## Lesson Contents
@@ -73,7 +73,8 @@ The Rmd file of this tutorial can be found in the course repo: `./Rmd/ocean_floo
 Go over the following steps to complete the exercise
  
  1. Knit the Rmd as is and see what happens. For now, don’t try to knit it from within your bookdown project folder, open it in a different session and folder. You will be prompted to install some packages (*marmap*, *mapproj*). 
- 1. Try adjusting the parameter 'data' according the available datasets in the `{marmap}` (the command `data(package = "marmap")`, will give you the available setting for the `data` parameter)
+ 1. It will not knit and give an error. Google your error and solve the problem.
+ 1. Now that it works, try adjusting the parameter 'data' according the available datasets in the `{marmap}` (the command `data(package = "marmap")`, will give you the available setting for the `data` parameter)
  1. Knit using the render() function as shown in the link but use `rmarkdown::render()`.
  1. Paste the rmarkdown::render() command in a separate script (so not in the ocean_floor.Rmd) and build a forloop to generate 4 different reports automatically. You can use `vcdExtra::datasets("marmap")` to get all the available dataset names in a dataframe.
 
@@ -93,7 +94,7 @@ The most obvious use of paramterization is creating a parameter for different da
  1. The year that the reported data applies to 
  1. The period in months that the report applies to
 
-**Here is where you can find the ECDC data:** https://www.ecdc.europa.eu/en/covid-19/data
+**Here is where you can find the ECDC data:** https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country
 
 The **minimum requirements** for the report is that next to the three parameters mentioned above, it should include at least one graph for the COVID-19 cases and one graph for the COVID-19 related deaths. After writing the Rmd, you should be able to render it with parameters set to any value you like.  1. Think about a way to show in your portfolio that you can work with parameterized reports **and** to showcase your rendered report on COVID-19 related deaths! 
 
