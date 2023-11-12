@@ -15,7 +15,7 @@ As explained, the course will be completed with a portfolio.
 The portfolio needs to be hosted on a publicly accessible Gihub pages website. During a live assessment halfway trough the course, the teacher, fellow students and you will go over the portfolio together. The idea is that you provide clarifications on any questions that might arise from your portfolio. You will have to process all the feedback you receive and include the alterations in your final portfolio.
 
 ## Assessment 
-If there are remaining questions about the portfolio, an assessment will be planned for you to be able to elaborate.
+An assessment will be planned for you to be able to elaborate on your final portfolio. Two skills are hard to show in a portfolio, and will have assessments during class. You need to pass these partial assessments and show your skill in the final portfolio. 
 
 ## Getting help
 We are here to help you pass this course! If you need assistance on getting your portfolio in order, please let us know. We do not have all the answers though, sometimes we will merely be able to point you in a solutions direction. Make sure to look around on the internet, usually other people have encountered very similar problems and have shared how they solved them. Or they were solved on a forum and you can look at it for inspiration. 
@@ -30,7 +30,7 @@ Your portfolio needs te be something that you would happily send to your current
  - dat het er uit ziet als een professioneel portfolio. Laat wat zien van wat je kan. Maak gebruik van de mogelijkheden van Rmarkdown en css
  - denk aan je eigen reproduceerbaarheid, ook in je github repo's (zie les 2)
  - zet alles niet op het laatste moment in github pages, grote kans dat er dan toch iets nog niet werkt en dan heb je geen tijd meer om het op te lossen
- - de open opdracht bestaat min of meer uit: een plan + een uitwerking. Voor beide zijn punten te halen. We willen dus graag een goed plan zien (onderbouwd, praktisch toepasbaar), en een resultaat van de eerste stappen in dat plan. Dat resultaat moet iets (eigenlijk meestal een stukje code) zijn wat je **zelf gemaakt** hebt, anders kunnen wij nog niet zien wat je nu kan. En daar gaat een portfolio juist over. Dus de code van een tutorial in je portfolio plakken is niet goed. 
+ - de open opdracht bestaat min of meer uit: een plan + een uitwerking. Voor beide zijn punten te halen. We willen dus graag een goed **plan** zien (onderbouwd, praktisch toepasbaar: waar wil je straks stage gaan lopen, wat voor werk wil je over een jaar? Waarom gaat deze skill je daarbij helpen? Hoe ga je die na deze 4 dagen verder ontwikkelen?), en een **resultaat** van de eerste stappen in dat plan. Dat resultaat moet iets (eigenlijk meestal een stukje **zelfgeschreven code**) zijn wat je **zelf gemaakt** hebt, anders kunnen wij nog niet zien wat je nu kan. En daar gaat een portfolio juist over. Dus de code van een tutorial in je portfolio plakken is niet goed. 
  - Verwerk de feedback op je portfolio.
  - Stop minimaal alle portfolio-opdrachten in je portfolio. Andere gerelateerde skills includeren is een goed idee!
  - Deel je portfolio niet in met headers als "opdracht 1.1" en "opdracht 5". Daar kan een potentiele werkgever niets mee. Geef inhoudelijke titels en leg ook uit wat er te zien is. Hou in je hoofd steeds in gedachten dat je dit meestuurt met een sollicitatie.
@@ -38,21 +38,20 @@ Your portfolio needs te be something that you would happily send to your current
 
 **Lijstje criteria portfolio-opdrachten: **
 
- - je kan laten zien dat je data analyses van iemand anders kan reproduceren (portfolio-opdracht 1.1)
- - je kan de reproduceerbaarheid van een wetenschappelijke studie beoordelen en hierover rapporteren (portfolio-opdracht 1.2)
- - Je includeert in een repo alle files (data code, documentatie) die nodig zijn om de gebruikte workflow te reproduceren (portfolio-opdracht 2)
- - github wordt ingezet als uitgangsbasis voor profilering als professional (portfolio-opdracht 3)
- - portfolio-opdracht 4 bestaat niet
- - je houdt je aan de regels rond citeren van werk van anderen en past dit toe in een reproducible workflow (portfolio-opdracht 5)
- - je werkt reproducible en open door middel van het delen van je werk in Rmarkdown en github pages (portfolio-opdracht 6.1)
- - Je hebt een onderbouwd plan voor de vrije ruimte (portfolio-opdracht 6.2)
- - Je hebt in de vrije ruimte een goede stap gemaakt met het gaan leren van een nieuwe skill (portfolio-opdracht 6.2)
- - Je kan R en SQL toepassen om met relational databases te werken (portfolio-opdracht 7)
- - Je kan Rpackages bouwen om je werk voor jezelf en anderen reproduceerbaar te houden (portfolio-opdracht 8)
- - je geeft blijk van kennis van literate progamming (RMarkdown) en past deze toe in je werk (portfolio-opdracht 9 en allemaal)
- - de principes van reproducible research zijn herkenbaar toegepast in de eindproducten (allemaal)
- - Het portfolio is een professionele weergave van wat je nu kan en wat je aan het leren bent (allemaal)
- - werkhouding is conform open science practice (algemeen)
+ - je kan laten zien dat je data analyses van iemand anders kan reproduceren 
+ - je kan de reproduceerbaarheid van een wetenschappelijke studie beoordelen en hierover rapporteren 
+ - Je includeert in een repo alle files (data code, documentatie) die nodig zijn om de gebruikte workflow te reproduceren
+ - github wordt ingezet als uitgangsbasis voor profilering als professional 
+ - je houdt je aan de regels rond citeren van werk van anderen en past dit toe in een reproducible workflow 
+ - je werkt reproducible en open door middel van het delen van je werk in Rmarkdown en github pages 
+ - Je hebt een onderbouwd plan voor de vrije ruimte 
+ - Je hebt in de vrije ruimte een goede stap zelf gemaakt met het gaan leren van een nieuwe skill 
+ - Je kan R en SQL toepassen om met relational databases te werken 
+ - Je kan Rpackages bouwen om je werk voor jezelf en anderen reproduceerbaar te houden 
+ - je geeft blijk van kennis van literate progamming (RMarkdown) (inclusief goede grafieken, opmaak,  parameters, tabellen, inline code, etc) en past deze toe in je werk 
+ - de principes van reproducible research zijn herkenbaar toegepast in de eindproducten 
+ - Het portfolio is een professionele weergave van wat je nu kan en wat je aan het leren bent 
+ - werkhouding is conform open science practice 
 
 ## Setting up a bookdown project and publishing it online as course portfolio {#bookdownportfolio}
 
@@ -95,7 +94,7 @@ When you have build your `index.Rmd` file and have collected all files in the ro
 
 Once you have sucefully rendered your bookdown to a full website, hosting can be achived by copying all html files to your Github-pages. The easiest way is to clone your github pages repo and add, commit and push all html files to your github pages repo. The website will be automatically updated after some time. You can also setup a theme for your github pages. See [here](https://docs.github.com/en/github/working-with-github-pages/adding-a-theme-to-your-github-pages-site-with-the-theme-chooser) for more info.
 
-Trouble with figures not showing up? Try googling ".nojekyll file figures".
+**Trouble with figures not showing up? Try googling ".nojekyll file figures".**
 
 For a complete manual on working with github pages, [see the gh-pages docs](https://docs.github.com/en/github/working-with-github-pages/getting-started-with-github-pages) 
 
