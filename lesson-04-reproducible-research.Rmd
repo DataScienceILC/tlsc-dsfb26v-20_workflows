@@ -1,6 +1,6 @@
 # Reproducible Research {#represintro}
 ```{r setuples, include=FALSE}
-les <- 1
+les <- 4
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ```
 

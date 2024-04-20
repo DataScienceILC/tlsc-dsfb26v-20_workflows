@@ -1,6 +1,6 @@
 # RMarkdown - Syntax {#rmarkdownsyntax}
 ```{r setuples, include=FALSE}
-les <- 5
+les <- 7
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 library(ggplot2)
 ```

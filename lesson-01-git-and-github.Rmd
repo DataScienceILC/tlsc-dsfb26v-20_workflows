@@ -1,6 +1,6 @@
 # Introduction to Git and GitHub {#gitintro}
 ```{r setuples, include=F}
-les <- 3
+les <- 1
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ```
 ## Learning goals

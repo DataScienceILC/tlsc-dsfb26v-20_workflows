@@ -1,6 +1,6 @@
 # Creating R packages {#rpackages}
 ```{r, setuples, include=FALSE}
-les <- 8
+les <- 6
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ```
 

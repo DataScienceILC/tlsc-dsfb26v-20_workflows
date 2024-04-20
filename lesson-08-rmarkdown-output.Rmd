@@ -1,6 +1,6 @@
 # RMarkdown - Output formats {#rmarkdownoutput}
 ```{r setuples, include=FALSE}
-les <- 6
+les <- 8
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ```
 

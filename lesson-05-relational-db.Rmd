@@ -1,7 +1,7 @@
 # Working with relational data & databases {#relationaldb}
 
 ```{r setup, include=FALSE}
-les <- 7
+les <- 5
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ```
 
