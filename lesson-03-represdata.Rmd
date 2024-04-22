@@ -1,6 +1,6 @@
 # Data management {#represdata}
 ```{r setuples, include=FALSE}
-les <- 2
+les <- 3
 load("course_urls.RData")
 knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ```

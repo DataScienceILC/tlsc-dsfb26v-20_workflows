@@ -2,7 +2,7 @@
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, class.source="Rchunk", class.output="Rout")
-les <- 4
+les <- 2
 ```
 
 In the previous lesson you learned how to use Git if you are the only person working on a project. However, often you are **working together with other persons**. Git offers some additional tools to promote collaboration. We will introduce these additional tools in this part.
