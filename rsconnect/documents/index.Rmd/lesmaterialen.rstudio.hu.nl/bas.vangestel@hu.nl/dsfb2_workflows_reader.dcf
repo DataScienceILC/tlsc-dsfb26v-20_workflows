@@ -1,0 +1,10 @@
+name: dsfb2_workflows_reader
+title:
+username: bas.vangestel@hu.nl
+account: bas.vangestel@hu.nl
+server: lesmaterialen.rstudio.hu.nl
+hostUrl: https://lesmaterialen.rstudio.hu.nl/__api__
+appId: 53
+bundleId: 835
+url: https://lesmaterialen.rstudio.hu.nl/workflows-reader/
+version: 1

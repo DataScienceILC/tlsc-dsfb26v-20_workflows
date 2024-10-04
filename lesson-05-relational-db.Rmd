@@ -1240,6 +1240,8 @@ dbDisconnect(con)
 ## Portfolio assignment `r paste0(les, "")` {-}  
 <div class="dagopdracht">
 
+*NB: this assignment is optional if you passed the SQL assessment that was held during the lessons. If you did not pass this assessment, you have to include the assignment below in your portfolio.*
+
 **relational databases**
  
 **TIPS**

@@ -1,8 +1,5 @@
 --- 
 title: "Data Science Workflows Course" 
-subtitle: "HU OSIRIS: tlsc-dsfb26v-20_workflows"
-author: "Hogeschool Utrecht: Alyanne de Haan, Marc Teunis, Bas van Gestel"
-date: "2023/2024"
 site: bookdown::bookdown_site
 output: 
     bookdown::gitbook:
@@ -79,7 +76,11 @@ knitr::opts_chunk$set(class.source="Rchunk", class.output="Rout")
 library(tidyverse)
 ```
 
+
 # Course introduction {-}
+
+**Teachers: Bas van Gestel en Zoltán Bochdanovits-ten Hove**
+
 When you program, you seldom program in isolation. Usually, you are writing analyses, pieces of software or creating visualizations within a collaborative (research) project. Adopting a robust and reproducible workflow is key for managing your own work and that of others. Using a version control system, managing your data and other files in a structured way, deploying your software or analysis pipeline in a robust manner are all good practices you need to apply in your work as a bioinformatician or data analyst, translator or scientist.
 
 ## Osiris
