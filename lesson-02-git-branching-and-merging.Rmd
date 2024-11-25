@@ -418,7 +418,7 @@ To complete this exercise, you need to complete the following steps:
  1. Delete the branch related to the issue you just resolved 
  
 
-
+</div>
 
 
 ### How it works in Detail
@@ -512,7 +512,7 @@ To start with bookdown, there is a [good and free resource available](https://bo
  -follow the steps in this link [(click)](https://bookdown.org/yihui/bookdown/get-started.html) and render the book.
  -If you don't have a `build book` button in your build tab, make sure you are in the demo project!
  
- ```{r, echo=FALSE, message=FALSE, fig.width=4 }
+```{r, echo=FALSE, message=FALSE, fig.width=4 }
 knitr::include_graphics(here::here(
     "images",
     "build_book.png"

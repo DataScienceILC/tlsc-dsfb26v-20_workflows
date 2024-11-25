@@ -1,4 +1,5 @@
 # Data management {#represdata}
+
 ```{r setuples, include=FALSE}
 les <- 3
 load("course_urls.RData")
@@ -354,6 +355,7 @@ serverside$value == local$value[2]
 ```
 
 </details>
+</div>
 
 
 ### Principle 2: Simple, visual project structures and conventions    

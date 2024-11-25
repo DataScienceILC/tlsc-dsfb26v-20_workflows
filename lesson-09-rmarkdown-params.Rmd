@@ -77,6 +77,7 @@ Go over the following steps to complete the exercise
  1. Now that it works, try adjusting the parameter 'data' according the available datasets in the `{marmap}` (the command `data(package = "marmap")`, will give you the available setting for the `data` parameter)
  1. Knit using the render() function as shown in the link but use `rmarkdown::render()`.
  1. Paste the rmarkdown::render() command in a separate script (so not in the ocean_floor.Rmd) and build a forloop to generate 4 different reports automatically. You can use `vcdExtra::datasets("marmap")` to get all the available dataset names in a dataframe.
+</div>
 
 
 ## Portfolio assignment `r paste0(les, "")` {-}  

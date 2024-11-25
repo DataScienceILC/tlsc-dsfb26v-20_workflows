@@ -1282,7 +1282,7 @@ dbDisconnect(con)
  
  1. Write a short report to show at least te actions listed in this assignment in a Rmd file for your portfolio. Include pictures and provide text explaining and showcasing your skills. 
 
-
+</div>
 ## Resources
 https://db.rstudio.com/best-practices/run-queries-safely/
 https://nuitrcs.github.io/databases_workshop/r/r_databases.html

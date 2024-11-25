@@ -165,27 +165,16 @@ There are very many good references on the internet that you can consult to lear
 
 ## Create your own package and publish it on Github (portfolio assignment)
 
-In the assignment below you will create your own R package, related to work you have previously done in the programming courses. The final end-result is a personal package (publish the link to your package in your portfolio), that includes functionality that you can use in later analysis. **This assignment needs you to be creative and proactive**
+In the assignment below you will create your own R package, related to work you have previously done in the programming courses. The final end-result is a personal package (publish the link to your package in your portfolio), that includes functionality that you can use in later analysis. **This assignment needs you to be creative and proactive.**
 
 ## Portfolio assignment `r paste0(les, "")` {-}  
 <div class="dagopdracht">
 
 **First read the whole assignment before you begin!**
 
-To complete this portfolio assingment you need to perform the following steps:
+To complete this portfolio assignment, you need to create your own R package. For this, you need to setup a new RStudio project with an R package, linked to a github repo in your Github account. 
 
- 1. From your collection of RMarkdown files, collect 1 or a few that you know contain duplication of code (which should be fixed by writing a function). If there are already functions in your RMarkdown files, you can also select those
- 2. Setup a new RStudio project with an R package (think about a cool name* - cannot included special character and spaces), linked to a github repo in your Github account
- 3. Transfer the RMarkdown files that you selected in step 1 (and all their dependencies like data and scripts) to your new package (put them in the appropriate folders).
- 4. Using what you have learnt so far (and what you can read from https://r-pkgs.org/index.html and https://emilyriederer.netlify.app/post/rmarkdown-driven-development/), transform your RMarkdown files into one R package. Publish the link to this package in your portfolio:
- 
-*When choosing a name for a package, this quote [from]() might help:
-
-"Side-note, if you are to create an R package, you need a name. It needs to be unique, especially if you plan on getting your package on CRAN. The `{available}` package can help you evaluate possible names to make sure they do not clash with other names and that they do not mean something rude."
-
-_We do not appreciate package names including offensive words_
-
-Use this code to check the name you would like to use:
+NB: if you create an R package, you need a name. It needs to be unique, especially if you plan on getting your package on CRAN. The `{available}` package can help you evaluate possible names to make sure they do not clash with other names. Use this code to check the name you would like to use:
 
 ```{r, eval=FALSE}
 library(available)
@@ -195,18 +184,16 @@ available("your_intended_package_name")
 **To pass this assignment, your new package should at least include:**
 
  1. A properly formatted `DESCRIPTION` file, with all the fields including relevant information (so change the default values)
- 1. 4 different functions that you wrote and with proper documentation, using roxygen2 comments
+ 1. At least 4 different functions that you wrote and with proper documentation, using roxygen2 comments
  1. A NAMESPACE file, generated with the command `devtools::document()`
- 1. 1 Raw dataset that is documented and cleaned into a clean dataset. This clean dataset should be accessible inside your package. This means that if I install your package from Github, I would be able to call `data(<dataset_name>, <package_name>)` to load the cleaned dataset of interest in the Global Environment.
  1. One vignette that is accessible via the command `browseVignettes(<package_name>)` or `vignette(<package_name>)`
  1. The package installs from Github without errors when I run: `devtools::install_github("account_name/package_name")`
  
 <div class="tip">
 A few tips:
 
- - Rewrite any duplication of your code into a seperate function
  - Put every function in a .R file, with the same name of the function, and put those scripts (with only the function definition) in the `./R` folder of your package
- - Document your functions and datasets using `{roxygen2}` comments
+ - Document your functions using `{roxygen2}` comments
  - Build the `NAMESPACE` using the `devtools::document()` function
  - Include R package dependencies of your package with `usethis::use_package(<package_name>)`
  - If you use the pipe (`%>%`) in your package code, run `usethis::use_pipe()` to add the `%>%` as a dependency to your package `NAMESPACE` file
@@ -215,6 +202,7 @@ A few tips:
 
 GOOD LUCK!!
 
+</div>
 </div>
 
 
