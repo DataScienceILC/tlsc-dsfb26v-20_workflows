@@ -1,0 +1,76 @@
+# Portfolio (toetsing)
+
+```{r echo=FALSE}
+deadline_summatief <- "zondag 25 mei 2025 23.59 uur"
+deadline_formatief <- "donderdag 25 april 2025 23.59 uur"
+assessments <- "dinsdag 3 juni 2025"
+sql_assessment_1 <- "woensdag 7 mei 2025"
+sql_assessment_2 <- "vrijdag 16 mei 2025"
+```
+
+
+## Algemene informatie over het portfolio {-} 
+
+Tijdens de cursus Workflows werk je aan een **portfolio** en dit portfolio wordt uiteindelijk beoordeeld voor een cijfer. Het portfolio is een product dat je later kunt gebruiken als je ergens wilt solliciteren (bijv. voor een stage of een baan). Het portfolio kun je na deze cursus dan ook uit blijven breiden. Het doel van het portfolio is om te laten zien welke skills jij beheerst op het gebied van Data Science for Biology. 
+
+### Inhoud van het portfolio
+
+In het portfolio verwerk je de onderdelen die hieronder genoemd worden (in de sectie ['Onderdelen van het portfolio'](https://lesmaterialen.rstudio.hu.nl/workflows-reader/portfolio-toetsing.html#onderdelen-van-het-portfolio-opdrachten)). Het is belangrijk dat je alle portfolio opdrachten verwerkt in je portfolio. We willen de opdrachten niet terugzien als opdrachten (dus geen portfolio met headers als 'Opdracht 1', 'Opdracht 2' etc.). In plaats daarvan kun je de opdrachten beter inhoudelijke titels geven en moet je uitleggen wat er te zien is. Houd in je achterhoofd dat het portfolio bedoeld is voor toekomstige werkgevers. 
+
+Verder is het de bedoeling dat je laat zien wat je kunt. Maak dus gebruik van de mogelijkheden van Rmarkdown en (eventueel) css. 
+
+### Deadline en inlevervoorwaarden
+
+Het portfolio moet uiteindelijk ingeleverd worden **vóór `r deadline_summatief`**. Je portfolio wordt beoordeeld als het voldoet aan de inlevervoorwaarden. De inlevervoorwaarden zijn als volgt:
+
+- Het portfolio is gehost via GitHub pages (zie ook de sectie ['Hosten van het portfolio'](https://lesmaterialen.rstudio.hu.nl/workflows-reader/portfolio-toetsing.html#hosten-van-portfolio-github-pages)). 
+- Het portfolio is gemaakt met [bookdown](https://bookdown.org/) en de bookdownbestanden (o.a. Rmarkdown bestanden) staan in een GitHub repository. 
+- De GitHub repository is toegankelijk voor de docenten (public repository of een private repository waarin de docenten leesrechten hebben).
+- Er is een e-mail verstuurd vóór de deadline naar de docenten met daarin de links naar het gehoste portfolio en de GitHub repository met de bookdownbestanden. 
+
+### Feedback op het portfolio
+
+Tijdens de meeste lessen van de cursus is er tijd om aan het portfolio te werken. Het is dan ook mogelijk om aan de docenten feedback te vragen. Zorg er dus voor dat je zelf bij de docenten aangeeft wanneer je graag feedback wilt en waarop. 
+
+Tijdens de cursus is er ook een formatief inlevermoment. Hiervoor is het de bedoeling dat je de tussentijdse versie portfolio **vóór `r deadline_formatief`** deelt met de docenten. De docenten kunnen dan in de lessen hierna feedback geven op je portfolio. 
+
+### Plagiaat en het gebruik van Generatieve AI
+
+Zoals altijd is plagiaat (het gebruik/kopiëren van werk van anderen zonder bronvermelding) niet toegestaan. Het is ook niet toegestaan om je portfolio door anderen te laten maken. Je bent zelf verantwoordelijk voor de inhoud van je portfolio. Alle verdenkingen van plagiaat of andere vormen van fraude worden gemeld bij de Examencommissie van het ILC. 
+
+Natuurlijk is het wel toegestaan om informatie op het internet te gebruiken. Ook is het toegestaan om Generatieve AI tools (zoals ChatGPT of Co-pilot) te gebruiken. Voorwaarde voor het gebruik van deze hulpmiddelen is dat je aangeeft in het portfolio waar en waarvoor je gebruik hebt gemaakt van deze bronnen.
+
+### Assessment
+
+De cursus wordt afgesloten met een assessment. De assessments worden gehouden op **`r assessments`**. Hierin krijg je kort de tijd (15 minuten) om je portfolio toe te lichten en om vragen van de docenten te beantwoorden. Het assessment is vooral bedoeld om te toetsen of je jouw portfolio zelf hebt gemaakt (en om dus fraude uit te sluiten). 
+
+
+## Hosten van het portfolio (Github pages) {-} 
+
+
+## Onderdelen van het portfolio (opdrachten) {-} 
+
+### 1. CV en toekomstplan {-} 
+
+#### 1a. Curriculum Vitae {-} 
+
+<div class="dagopdracht">
+
+</div>
+
+#### 1b. Plan voor de toekomst {-} 
+
+<div class="dagopdracht">
+
+</div>
+
+### 2. Vrije opdracht {-} 
+
+<div class="dagopdracht">
+
+</div>
+
+### 3. {-} 
+
+
+
