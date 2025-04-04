@@ -87,7 +87,7 @@ When you program, you seldom program in isolation. Usually, you are writing anal
 Before you do anything else, make sure you sign up for the exam AND the second chance! 
 
 ## Purpose of this website
-This website is a `{bookdown}` project that forms the reader and learning content for this course 
+This website is a `bookdown` project that forms the reader and learning content for this course 
 
 ## General course aim and content
 In this course we will focus on the tools that are available to adopt such good practices in your own work. Using examples and many exercises and assignments we will help you get to know the tools and **WORKFLOWS** that are available to you. The focus here will be on the tools that are freely and from open source available. We chose to limit the course tools to the use of open source applications exclusively. This will greatly facilitate the application and use of these tools also outside the course context. Furthermore, open source software is one of the key prerequisites for Open Science. We will start the course by explaining what Open Science is and how it (to our opinion) will lead to better science. We will use this framework to expand our knowledge on how to apply good practices from the software development industry to scientific applications and from there we will gradually start adding tools to your data science toolbox. 
@@ -112,31 +112,21 @@ This is also (globally) the contents of the course.
 ## Software, Laptop and RStudio server
 In order for you to be able to start applying what you have learned during the course, we require you to install the software needed for this course on your own computer. This means you will get some extra practice with installing packages and dependencies, and you have your laptop installed and ready for your internship next school year.
 
-We do also still offer an account on the RStudio Server that you used during the previous DSFB-2 course ("DAUR"). The server can be found here `r as.character(unlist(urls[4,2]))`. If you do not have access to your account any more, please inform your teachers. The list of required software can be found here \@ref(softwarelist). 
+We do also still offer an account on the RStudio Server that you used during the previous DSFB1 course. The server can be found [here](daur.rstudio.hu.nl). If you do not have access to your account any more, please inform your teachers. The list of required software can be found here \@ref(softwarelist). 
 
 ## Seeking interaction and help
-During this course we really invite you to seek interaction on the course contents, the exercises and assignments with fellow course participants and the instructors. To facilitate collaboration and also the possibility for you to build a strong "class of `r lubridate::year(Sys.Date())`" network, we scheduled 5 hour sessions at the HU. We will of course include breaks. Your teachers may not always be present during the whole session, but quite frequently we will. We will start every class with a plenary meeting.
-
-Note that you will have to work on Workflows outside of class hours.
-
-**Presence in class is in principle mandatory!** We would have a very hard time teaching you how to collaborate on DSFB projects when you or your classmates aren't there. You will be graded partly on class participation.
+During this course we really invite you to seek interaction on the course contents, the exercises and assignments with fellow course participants and the instructors. **Presence in class is mandatory!** You will be graded partly on class participation.
 
 ## Exercises and portfolio
 
 ### Normal exercises
-Within the lesson you will encounter a number of exercises. 
 
-Please answer all the assignments and exercises in an RMarkdown document. You learned how to make one in DAUR1. **Save it** somewhere in your course project. Seriously, you may need code from one lesson in one of the following lessons.
+Within the lessons you will encounter a number of exercises. Most excercises in the lessons are 'normal' exercises that can be used to learn the skills presented in the lessons. 
 
-<div class="dagopdracht">
-### Portfolio
-At the end of every lesson (and sometimes in the middle), there is a larger _portfolio assignment_. You will work on this assignment for the rest of the day, after finishing the smaller exercises in the lesson. Save all portfolio assignments in separate Rmd files! **Please create a separate RStudio project to complete all the portfolio assignments.** 
+### Portfolio assignments
 
-The collection of all the portfolio assignments will form the main part of your portfolio for this course. The portfolio is also the exam for this course. The details are described [here](#portfolioexam). In short: You will have to publish a bookdown project to github pages in your github account. This page will function as a portfolio where you will post all the assignments and output products* of the course and should be a professional looking representation of your DSFB skills at the end of this semester. Bookdown and github will be covered within this course.**You will need to pass all portfolio assignments in order to pass the course!**. See [here](#portfolioexam) for more info. 
+At the end of every lesson (and sometimes in the middle), there is a larger __portfolio assignment__. You will work on this assignment for the rest of the day, after finishing the smaller exercises in the lesson. The collection of all the portfolio assignments will form the main part of your portfolio for this course. The portfolio is also the exam for this course. The details for the portfolio and all the portfolio assignments can be found [here](#portfolio-toetsing). 
 
-* *As your work on the projecticum is probably your first real data science / bioinformatics project, your portfolio is the logical place to display it. Therefore, the work you do for the projecticum will also be part of your potfolio. However, the projecticum is only graded for the projecticum.* 
-
-</div>
 
 ## Study hours
 Please also note that this is a 5 EC course, so count on about 140 hours of work in total. Part of this workload will be spread over the semester, to work on your portfolio. But we scheduled these lessons in such a way that you will be able to finish most lessons in the first 3 weeks of the semester. Use this time to you advantage! You will need the skills from this course within the projecticum. 
@@ -146,14 +136,11 @@ Please also note that this is a 5 EC course, so count on about 140 hours of work
 This course is about the workflows that are available to adopt good practices in data science for biology. This is a field in which you rarely work alone. Participating and contributing to a data science community is an important skill to practice! Active participation is therefore conditional for getting a grade on your portfolio. 
 So, to summarise: to successfully complete this course, you will need to pass these checks:
 
- 1. Add all required assignments and materials to your online portfolio
- 1. Provide the teachers access to your online portfolio **before deadline TBA, 23:59h.**
- 1. Meet the portfolio and assignment minimal requirements
- 1. Pass the live partial assignments in class (Two skills are hard to show in a portfolio. We will do live partial assessments for these skills in class. Discussed live at first class meeting)
- 1. Participate actively in class
+ 1. Complete your portfolio including all the portfolio assignments before the deadline.
+ 1. Participate actively in class.
  1. Pass the live assessment that will be held to grade your portfolio.
 
-For more detailed information on the requirements and rules for passing this course see [the page on the portfolio](#portfolioexam).
+For more detailed information on the requirements and rules for passing this course see [the page on the portfolio](#portfolio-toetsing).
 
 
 
