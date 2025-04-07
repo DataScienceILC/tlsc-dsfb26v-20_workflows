@@ -167,42 +167,10 @@ There are very many good references on the internet that you can consult to lear
 
 In the assignment below you will create your own R package, related to work you have previously done in the programming courses. The final end-result is a personal package (publish the link to your package in your portfolio), that includes functionality that you can use in later analysis. **This assignment needs you to be creative and proactive.**
 
-## Portfolio assignment `r paste0(les, "")` {-}  
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-**First read the whole assignment before you begin!**
-
-To complete this portfolio assignment, you need to create your own R package. For this, you need to setup a new RStudio project with an R package, linked to a github repo in your Github account. 
-
-NB: if you create an R package, you need a name. It needs to be unique, especially if you plan on getting your package on CRAN. The `{available}` package can help you evaluate possible names to make sure they do not clash with other names. Use this code to check the name you would like to use:
-
-```{r, eval=FALSE}
-library(available)
-available("your_intended_package_name")
-```
-
-**To pass this assignment, your new package should at least include:**
-
- 1. A properly formatted `DESCRIPTION` file, with all the fields including relevant information (so change the default values)
- 1. At least 4 different functions that you wrote and with proper documentation, using roxygen2 comments
- 1. A NAMESPACE file, generated with the command `devtools::document()`
- 1. One vignette that is accessible via the command `browseVignettes(<package_name>)` or `vignette(<package_name>)`
- 1. The package installs from Github without errors when I run: `devtools::install_github("account_name/package_name")`
- 
-<div class="tip">
-A few tips:
-
- - Put every function in a .R file, with the same name of the function, and put those scripts (with only the function definition) in the `./R` folder of your package
- - Document your functions using `{roxygen2}` comments
- - Build the `NAMESPACE` using the `devtools::document()` function
- - Include R package dependencies of your package with `usethis::use_package(<package_name>)`
- - If you use the pipe (`%>%`) in your package code, run `usethis::use_pipe()` to add the `%>%` as a dependency to your package `NAMESPACE` file
- - Regularly build your package using the options in RStudio in the `Build` pane
- - Learn how to create a package vignette [here](https://r-pkgs.org/vignettes.html)
-
-GOOD LUCK!!
-
-</div>
+Maak nu [opdracht 6](portfolio-toetsing.html/#r-package) van de portfolio-opdrachten.
 </div>
 
 

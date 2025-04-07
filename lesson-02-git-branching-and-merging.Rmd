@@ -615,32 +615,13 @@ Each account on github can be associated to one or multiple websites that are ho
 
 
 
-## Portfolio assignment `r paste0(les, " ")` {-}  
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-First read all the exam requirements [here in the reader](#portfolioexam) 
+Maak je portfolio beschikbaar via GitHub pages. Volg hiervoor [deze instructies](portfolio-toetsing.html/#het-opzetten-van-je-portfolio-github-bookdown-en-github-pages).
 
-**github pages**
-
- - Execute the steps explained [here (click)](https://guides.github.com/features/pages/) to setup a github-pages repository called `myname-portfolio` or something similar.
-
-**NOTE: your github pages will be visible for everyone! Don't put anything on there you do not want the world to see. Including but not restricted to: your address, e-mail etc, data you have no permission for, code you don't want anyone to see (your teachers will still be able to see all code in your repo)**
- 
-Once you have successfully rendered your bookdown to a full website, hosting can be achieved by copying all html files to your Github-pages. The easiest way is to:
-
- 1. set your repo to private
- 1. add your teachers as collaborators on the repo
- 1. clone your github pages repo 
- 1. copy all the html files rendered with bookdown to this folder
- 1. commit and push all changes to your github pages repo. The website will be automatically updated after some time. 
- 
-Make sure your portfolio looks professional, and flex your Rmarkdown and analysis skills: it is meant to be used with future job applications! (Also, it is part of your grade)
-
- - Put your portfolio on your github pages
-
-
+Start daarnaast met [de vrije opdracht, d.w.z. opdracht 2](portfolio-toetsing.html/#vrije-opdracht) van de portfolio-opdrachten. Zorg ervoor dat je al bepaalt welke dagen je aan de vrije opdracht gaat werken (32 uur in totaal). 
 </div>
-
 
 
 ### More information

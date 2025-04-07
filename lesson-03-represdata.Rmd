@@ -973,28 +973,10 @@ For Excel users:
  - Adhere to the naming conventions for variable names (see above)
  - Use cell validation for entered values. This is especially true if you have multiple categorical variables that need manual labeling in Excel. A typo is just around the corner.
 
+## Portfolio assignment {-}  
+<div class="dagopdracht">
 
-
-## Portfolio assignment `r paste0(les, " ")` {-}
-<div class = "dagopdracht">
-
-**Applying the Guerrilla analytics framework to your own project.**
-
-(A) 
- 1. Look at your RStudio project that you created for the DAUR-II assignments
- 1. download your folders (not the HUGE datafiles and kraken-database!) and rearrange your project according the Guerilla principles explained above
- 1. for the data... folders: provide only a readme.txt with alle the info you would normally put there + where the data is stored
- 1. Provide study documentation and meta data. 
- 1. Use the `{fs}` package to share a screenshot of your folder tree in your portfolio, look [at:](https://www.tidyverse.org/blog/2018/01/fs-1.0.0/) for more info on how to use the `{fs}` package. 
-
-
-hint: you had 3 datasets within the RNAseq project, one of them being the exam project, and 2 datasets within the metagenomics project. 
-
-(B)
-Now clean up your work environment for this course (workflows) and the parallel course in DSFB2 (projecticum). Set up a folder structure that will accomodate future plans and collaboration on the projecticum. Provide readme-files or comments within the code where needed. 
-
-For the projecticum folder, make sure you do this together with your lab partner.
-
+Maak [opdracht 3a en 3b](portfolio-toetsing.html/#data-management) van de portfolio-opdrachten.
 </div>
 
 ## Resources

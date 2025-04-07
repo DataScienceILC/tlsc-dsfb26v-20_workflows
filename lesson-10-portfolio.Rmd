@@ -25,8 +25,9 @@ Het portfolio moet uiteindelijk ingeleverd worden **vóór `r deadline_summatief
 
 - Het portfolio is gehost via GitHub pages (zie ook de sectie ['Hosten van het portfolio'](#hosten-van-portfolio-github-pages)). 
 - Het portfolio is gemaakt met [bookdown](https://bookdown.org/) en de bookdownbestanden (o.a. Rmarkdown bestanden) staan in een GitHub repository. 
-- De GitHub repository is toegankelijk voor de docenten (public repository of een private repository waarin de docenten leesrechten hebben).
-- Er is een e-mail verstuurd vóór de deadline naar de docenten met daarin de links naar het gehoste portfolio en de GitHub repository met de bookdownbestanden. 
+- Er is een R package gemaakt en dit R package is beschikbaar gemaakt via een GitHub repository (zie opdracht 6 van de portfolio-opdrachten).
+- De GitHub repositories zijn toegankelijk voor de docenten (public repository of een private repository waarin de docenten leesrechten hebben).
+- Er is een e-mail verstuurd vóór de deadline naar de docenten met daarin de links naar het gehoste portfolio, de GitHub repository met de bookdown bestanden en de GitHub repository voor het R package. 
 
 ### Feedback op het portfolio {-} 
 
@@ -77,7 +78,7 @@ Om de Rmarkdown bestanden in je portfolio repository om te zetten naar een websi
 
 Met GitHub is het mogelijk om een website te hosten met GitHub pages. Je gaat dit gebruiken om de website voor je portfolio beschikbaar te maken voor anderen. Volg hiervoor de volgende stappen:
 
-1. Maak een GitHub repository aan met de naam *gebruikersnaam*.github.io, waar *gebruikersnaam* vervangen moet zijn door jouw GitHub gebruikersnaam. Zorg er ook voor dat de repository public is (en niet private). Zie hieronder voor een voorbeeld:
+1. Maak een GitHub repository aan met de naam gebruikersnaam.github.io, waar 'gebruikersnaam' vervangen moet zijn door jouw GitHub gebruikersnaam. Zorg er ook voor dat de repository public is (en niet private). Zie hieronder voor een voorbeeld:
 
 ![](images/10_githubpages.png){width=60%}
 
@@ -85,11 +86,11 @@ Met GitHub is het mogelijk om een website te hosten met GitHub pages. Je gaat di
 
 2. Clone deze nieuwe GitHub repository naar je computer. 
 
-3. Kopieer alle bestanden in de bookdown folder van je portfolio repository (dus alle bestanden in het mapje **_book**) naar de map van de nieuwe GitHub pages repository.
+3. Kopieer alle bestanden in de bookdown folder van je portfolio repository (dus alle bestanden in het mapje **\_book**) naar de map van de nieuwe GitHub pages repository.
 
 4. Push de bestanden naar GitHub.
 
-5. Bekijk of de website zichtbaar is door op het web te gaan naar https://*gebruikersnaam*.github.io (waarbij je opnieuw *gebruikersnaam* vervangt door jouw GitHub gebruikersnaam). 
+5. Bekijk of de website zichtbaar is door op het web te gaan naar https://gebruikersnaam.github.io (waarbij je opnieuw 'gebruikersnaam' vervangt door jouw GitHub gebruikersnaam). 
 
 <div class="tip">
 
@@ -234,5 +235,148 @@ Voer de onderstaande stappen uit in je analyse:
 \br
 
 - Voeg een stappenplan toe voor vervolgonderzoek. Een typische analyse voor dit soort data is het uitvoeren van een dose-response analyse met een log-logistisch model om de IC50 concentratie te bepalen. In R is hiervoor het `drc` package beschikbaar. Geef een stappenplan voor de stappen in R die nodig zijn om zo'n dose-response analyse uit te voeren. Voor inspiratie zie [dit artikel](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0146021). 
+
+</div>
+
+#### 4b. Een artikel beoordelen op reproduceerbaarheid {-}
+
+<div class="dagopdracht">
+
+In deze opdracht ga je de reproduceerbaarheid van een artikel beoordelen. We gaan hiervoor op zoek naar een artikel waarvoor de R code beschikbaar is gemaakt. 
+
+**Onderdeel 1**
+
+Zoek een artikel waarvoor de R code beschikbaar is gemaakt. Ga hiervoor naar de website van het [PLOS One tijdschrift](https://journals.plos.org/plosone/search) (dit is een Open Access tijdschrift, dus de artikelen zijn voor iedereen beschikbaar). Gebruik de zoektermen zoals ze in het screenshot hieronder zijn weergegeven:
+
+![](images/10_reproScience_PlosOne.png)
+
+In plaats van 'influenza' kun je ook een ander onderwerp kiezen. 
+
+Kies één van de artikelen uit de zoekresultaten voor de volgende onderdelen van de opdracht. Verwerk in je portfolio:
+
+- de referentie naar het artikel (inclusief een link naar de website);
+- de onderzoeksvraag van het artikel; 
+- en een (korte!) samenvatting van de methode en resultaten.
+
+**Onderdeel 2**
+
+Om te beoordelen of een artikel reproduceerbaar is, zijn er beoordelingscriteria opgesteld (deze criteria zijn afkomstig uit [deze bron](https://www.researchgate.net/publication/340244621_Reproducibility_and_reporting_practices_in_COVID-19_preprint_manuscripts)). De criteria staan in de tabel hieronder:
+
+| Transparency Criteria| Definition       | Response Type|
+|---------|-------------------------------|----------|
+|Study Purpose |A concise statement in the introduction of the article, often in the last paragraph, that establishes the reason the research was conducted. Also called the study objective.| Binary (Yes or No)| 
+|Data Availability Statement | A statement, in an individual section offset from the main body of text, that explains how or if one can access a study’s data. The title of the section may vary, but it must explicitly mention data; it is therefore distinct from a supplementary materials section.| Binary (Yes or No)|
+|Data Location | Where the article’s data can be accessed, either raw or processed.| Found Value|
+|Study Location| Author has stated in the methods section where the study took place or the data’s country/region of origin.| Binary (Yes or No); Found Value|
+|Author Review| The professionalism of the contact information that the author has provided in the manuscript.|Found Value|
+|Ethics Statement | A statement within the manuscript indicating any ethical concerns, including the presence of sensitive data.|Binary (Yes or No)|
+|Funding Statement| A statement within the manuscript indicating whether or not the authors received funding for their research.|Binary (Yes or No)|
+Code Availability | Authors have shared access to the most updated code that they used in their study, including code used for analysis. |Binary (Yes or No)|
+
+Beoordeel het door jouw gevonden artikel met de bovenstaande criteria. Verwerk je bevindingen in je portfolio. 
+
+**Onderdeel 3**
+
+In het laatste onderdeel van de opdracht ga je kijken naar de reproduceerbaarheid van de gedeelde R code. Volg hiervoor de volgende stappen:
+
+1. Vind de data en/of R code die in het artikel worden gedeeld. Vaak is beschreven waar dit te vinden is in de tabel tussen de 'Author summary' en de 'Introduction' in, onder het kopje 'Data availability'. 
+
+2. Bekijk de R code en beschrijf in je eigen woorden wat de R code doet. Beoordeel de leesbaarheid met een cijfer van 1 (= erg slecht) tot 5 (= erg goed).
+
+3. Download de R code en data en maak een nieuw R project aan om de analyse te herhalen. Probeer minstens 1 figuur te reproduceren. Als je hierbij tegen errors aanloopt, probeer die dan te verbeteren en houd die verbeteringen bij. Beoordeel hierna de reproduceerbaarheid van de R code met een cijfer van 1 (= erg slecht) tot 5 (= erg goed).
+
+Neem een samenvatting van je bevindingen op in het portfolio.
+
+</div>
+
+### 5. SQL {-} 
+
+**NB: in plaats van de onderstaande opdracht kun je ook deelnemen aan de SQL assessments tijdens de lessen (de eerste kans is tijdens de les van `r sql_assessment_1`, de tweede kans is tijdens de les van `r sql_assessment_2`). Als je de SQL assessment in de les met een voldoende afsluit, hoef je de onderstaande opdracht niet in je portfolio op te nemen.**
+
+<div class="dagopdracht">
+
+In deze opdracht laat je zien dat je met SQL kunt werken om data te manipuleren/te verkrijgen. Voer hiervoor de volgende stappen uit: 
+
+1. Laad de volgende data in in R:
+
+    - [dengue data](https://github.com/DataScienceILC/tlsc-dsfb26v-20_workflows/blob/main/data/dengue_data.csv)
+    - [flu data](https://github.com/DataScienceILC/tlsc-dsfb26v-20_workflows/blob/main/data/flu_data.csv)
+    - de `gapminder` data uit het `dslabs` package.
+    
+2. Controleer of alle data tidy is. Zo niet, maak de data tidy.
+
+3. Manipuleer de `country` en `date` variabelen in de drie datasets op zo'n manier dat de waarden in alle datasets overeenkomen (qua waarden en data type). 
+
+4. Manipuleer de `gapminder` dataset op zo'n manier dat een join kan worden uitgevoerd met de `flu` en `dengue` datasets.
+
+5. Sla de nieuwe datasets op als csv bestanden. 
+
+6. Maak in DBeaver een nieuwe PostgreSQL database aan onder de naam 'workflowsdb'. 
+
+7. Gebruik een PostgreSQL query om de drie datasets in de database op te nemen als tabellen. 
+
+8. Gebruik PostgreSQL queries om de data te inspecteren.
+
+9. Gebruik PostgreSQL queries om een join uit te voeren op de tabellen (je mag zelf bepalen welke join jij informatief vindt). 
+
+10. Exporteer de nieuwe tabel (die ontstaan is door de join uit stap 9) zodat deze ingelezen kan worden in R. Maak visualisaties in R met de tabel. 
+
+Verwerk de bovenstaande stappen tot een verslag in je portfolio.
+
+</div>
+
+### 6. R package {-} 
+
+<div class="dagopdracht">
+
+In deze portfolio opdracht ga je je eigen R package maken. Het R package moet gedeeld worden via GitHub met de docenten. Zorg er dus voor dat deze GitHub repository public is of dat de docenten zijn toegevoegd aan de repository!
+
+Je mag zelf verzinnen waar je R package over gaat. Het onderwerp hoeft niet Life Science gerelateerd te zijn. Het doel van de opdracht is dat je leert om zelf een R package te schrijven en om dat package beschikbaar te maken voor anderen. 
+
+Het package moet voldoen aan de volgende voorwaarden:
+
+- Het package bevat minimaal 4 zelfgeschreven functies. Plaats elke functie in een aparte .R file (waarbij de naam van de file hetzelfde is als de naam van de functie) in de ./R map van het package.
+- De functies zijn voorzien van documentatie met roxygen2 comments.
+- Er is een NAMESPACE file aanwezig (deze kan worden aangemaakt met het commando `devtools::document()`).
+- Het package bevat een DESCRIPTION file met alle benodigde velden en met relevante informatie (anders dan de default waarden).
+- Het package bevat een vignette dat opgevraagd kan worden via de functies `browseVignettes` of `vignette`. Het vignette bevat alle informatie die nodig is om met het package te kunnen werken. 
+- Het package kan via GitHub geïnstalleerd worden (zonder errors!) via het commando `devtools::install_github("account_name/package_name")`. 
+
+Een paar tips:
+
+- Je kunt packages die nodig zijn voor het uitvoeren van jouw functies (bijv. `tidyverse`) opnemen in je package met het commando `usethis::use_package("package_name")`. 
+- Voer regelmatig een build uit voor je package met het `Build` pane in RStudio om te zien of alles correct verloopt.
+
+</div>
+
+### 7. Bronvermelding {-} 
+
+<div class="dagopdracht">
+
+Schrijf een korte introductie voor je Projecticum project en neem deze introductie op in je portfolio. Zorg ervoor dat deze introductie minimaal 5 referenties bevat naar relevante bronnen (artikelen en websites). De bronvermelding moet voldoen aan de volgende voorwaarden:
+
+- De bronnen zijn opgenomen in een .bib file.
+- De bronnen worden in de tekst geciteerd via automatische inline referenties. 
+- Er is een referentielijst aan het einde van de introductie aanwezig en deze lijst heeft een relevant kopje. 
+
+</div>
+
+### 8. Geparametrizeerde Rmarkdown {-}
+
+<div class="dagopdracht">
+
+Het doel van deze opdracht is dat je een geparametrizeerde Rmarkdown rapport maakt voor het aantal COVID-19 gevallen in Europa. De data kan op [deze website](https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country) worden gevonden.
+
+Het rapport bevat minimaal de volgende 3 parameters:
+
+1. Het land waarover het rapport gaat. 
+2. Het jaar van de metingen in het rapport.
+3. De maanden van de metingen in het rapport.
+
+Verder moet het rapport een grafiek bevatten voor het aantal COVID-19 gevallen en een grafiek voor het aantal COVID-19 gerelateerde sterfgevallen. Het rapport moet gegenereerd kunnen worden met elke willekeurige waarde voor elk van de drie parameters. 
+
+Bedenk zelf een (creatieve) manier om in je portfolio te laten zien dat deze opdracht is gelukt. Je kunt bijvoorbeeld een video-opname maken waarin je laat zien hoe het rapport werkt en deze video delen in je portfolio. 
+
+Tip: zorg ervoor dat je eerst een Rmarkdown maakt zonder parameters. Als je een functioneel rapport hebt, kun je de relevante onderdelen vervangen door parameters. 
 
 </div>

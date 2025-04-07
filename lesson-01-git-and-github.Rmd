@@ -308,48 +308,12 @@ You could also check if your mess up is listed [here](https://ohshitgit.com/) or
 </details>
 
 
-## Portfolio assignment `r paste0(les, ".1")` {-}
-<div class="dagopdracht">
-**Start your portfolio with a CV**
-
-(A)
-Create a Git repository on GitHub for your portfolio. 
-
-Subsequently, clone the GitHub repository to your computer. Copy paste your portfolio-Rmd-files to this folder. You will see the new files showing up in the "git" window in the upper right of the screen in Rstudio. Commit/push the changes to your repo.
-
-(B)
-Now start building your [CV](https://resumegenius.com/blog/resume-help/one-page-resume) in a new Rmarkdown file and keep using github for version control. Remember to commit often, and push your changes! Build something that you would want to send to a possible future bioinformatics internship position, or when job hunting. So it needs to be complete and professional looking.
-
-You can look around online for examples of cv's (/resume). Your cv will be part of your portfolio.
-
-</div>
-
-
-## Portfolio assignment `r paste0(les, ".2")` {-}  
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-**looking ahead**
-
-In class, we discussed this assignment yesterday. In the following weeks, start looking for what you will want to spend your extra time on this semester.
-
-Try, for yourself, to answer the following questions:
-
- - Where do I want to be in ~2 years time?
- - How am I doing now with respect to this goal?
- - What would be the next skill to learn?
-
-Make a planning on how to start learning this new skill. 
-
-Note the following points:
-
- - It has to be life sciences or useful for life sciences (no knitting, riding horses etc)
- - It has to be data science / bioinformatics
- - You have to show your plan in your portfolio, together with the result of the first few steps you took in trying to reach this goal.
- - You probably won't learn this skill in a few days. Just get started.
-
-This assignment will show us whether you succeeded in reaching an overview of the field and possibilities in data science for biology.
-
+Maak [opdracht 1a en 1b](portfolio-toetsing.html/#cv-en-toekomstplan) van de portfolio-opdrachten.
 </div>
+
 
 </br>
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)

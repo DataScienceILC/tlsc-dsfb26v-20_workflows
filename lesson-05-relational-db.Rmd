@@ -1237,52 +1237,13 @@ dbDisconnect(con)
 ```
 
 
-## Portfolio assignment `r paste0(les, "")` {-}  
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-*NB: this assignment is optional if you passed the SQL assessment that was held during the lessons. If you did not pass this assessment, you have to include the assignment below in your portfolio.*
-
-**relational databases**
- 
-**TIPS**
-
- - Be aware, the flu and dengue data contains metadata that should be stripped from the data on load.
- - Think of a way to create valid country names that fit with the gapminder data.
- - Remember (!) that in the end, this assignment needs to be reported by a .Rmd file for your portfolio. So save what you are doing, save your SQL scripts, make screenshots if you want, and in general design a clear and attractive report in RMarkdown to showcase your SQL/database-skills in your portfolio. You may be sending this to propspective employers in the future! (also, the portfolio is what we as teachers will be grading. But definitely think about the future rather than only about "passing the course")
- 
- <!-- - If you need to export tables Use `readr::write_csv()` and `readr::write_rds()` to write cleaned tables to disk -->
- 
-**Assignment**
- 
- 1. Load the flu (in the github repo for this course: https://github.com/DataScienceILC/tlsc-dsfb26v-20_workflows go to  ./data/flu_data.csv), the dengue ("./data/dengue_data.csv) and the gapminder (`{dslabs}` package) into three separate dataframes in R
- 
- 1. Check if they are in the right shape. Is the data in the 'tidy' format? If not change the format to 'tidy' 
- 
- 1. Change the `country` and `date` variables of the three tables so that they coincide in terms of data type, class and values 
- 
- 1. Store the three tables as separate (so six in total) .csv and .rds files.
-
- 1. In Dbeaver create a new PostgreSQL database "workflowsdb"
-  
- 1. Using `RPostgreSQL`, insert the tables into the database.
-  
- 1. Inspect the contents of the tables with SQL (in DBeaver) and save the SQL script.
- 
- 1. Inspect the contents of the tables with dplyr (in R) and save a RMarkdown showing what you are doing.
- 
- 1. Load the `gapminder` data in R and change the dataframe in such as way that you could join it to `dengue` and `flue`.
- 
- 1. Save this clean gapminder data in the "workflowsdb" database
- 
- 1. Perform some joins (your choice) with SQL (can be done in DBeaver or with dplyr.
- 
- 1. Generate a joined table, and export this from the database to R.
- 
- 1. Show some descriptive statistics with this table, and at least 3 visualisations using ggplot2.
- 
- 1. Write a short report to show at least te actions listed in this assignment in a Rmd file for your portfolio. Include pictures and provide text explaining and showcasing your skills. 
-
+Maak [opdracht 5](portfolio-toetsing.html/#sql) van de portfolio-opdrachten.
 </div>
+
+
 ## Resources
 https://db.rstudio.com/best-practices/run-queries-safely/
 https://nuitrcs.github.io/databases_workshop/r/r_databases.html

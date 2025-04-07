@@ -80,38 +80,10 @@ Go over the following steps to complete the exercise
 </div>
 
 
-## Portfolio assignment `r paste0(les, "")` {-}  
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-**First read the whole assignment before you begin!**
-
-Obviously, as you are presenting your portfolio's to us today, this assignment does not need to be included in the presentation.
-
-The most obvious use of paramterization is creating a parameter for different data inputs. Here we will use the European Center for Disease Control (ECDC) COVID-19 case data. 
-
-**The aim of this assignment** is to create an RMardown file containing a parameterized report for the COVID-19 cases as can be downloaded from the ECDC. The Rmd should include at least three parameters:
-
- 1. The country to which the report applies to
- 1. The year that the reported data applies to 
- 1. The period in months that the report applies to
-
-**Here is where you can find the ECDC data:** https://www.ecdc.europa.eu/en/publications-data/data-daily-new-cases-covid-19-eueea-country
-
-The **minimum requirements** for the report is that next to the three parameters mentioned above, it should include at least one graph for the COVID-19 cases and one graph for the COVID-19 related deaths. After writing the Rmd, you should be able to render it with parameters set to any value you like.  1. Think about a way to show in your portfolio that you can work with parameterized reports **and** to showcase your rendered report on COVID-19 related deaths! 
-
-
-Remember that your portfolio is an online CV. It needs to look like something you would send out while job hunting or to prospective internship supervisors.
-
-**Here are some pointers to get your started:**
- 
- 1. Start in a new Rmd file in your portfolio bookdown project
- 1. Start by downloading and exploring the data (you may pick multiple datasets)
- 1. First create an non parameterized version of your analysis (you need to come up with a graph for cases and a graph for deaths)
- 1. After the code is finished for a static report, you can start replacing parts of your filtering steps for parameters.
- 1. One way to access the parameters while you are writing your report is by running the first code chunk in your Rmd interactively, this will make the parameters available as a list in your Global environment. You can than access the individual parameter values by using the `$` (params$<parameter_key>) operator in your code (as you have seen in the ocean_floor.Rmd example, and explained in the ocean floor tutorial). 
- 
-**This assignment does not have a solution available, you are on your own here** 
- 
+Maak nu [opdracht 8](portfolio-toetsing.html/#geparametrizeerde-rmarkdown) van de portfolio-opdrachten.
 </div>
 
 

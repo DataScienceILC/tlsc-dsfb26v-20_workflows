@@ -322,74 +322,10 @@ If you have any suggestions for a good convenience function to add to this packa
 </div>
 
 
-## Portfolio assignment `r paste0(les, ".1")`  {-}
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-**_C. elegans_ plate experiment** 
-
-(Again: work out this exercise in a separate Rmarkdown file in your portfolio-project. You will need this later to put in your portfolio)
-
-The data for this exercise was kindly supplied by J. Louter (INT/ILC) and was derived from an experiment in which adult _C.elegans_ nematodes were exposed to varying concentrations of different compounds. The variables `RawData` (the outcome - number of offspring counted as an integer value, after incubation time), `compName` (the generic name of the compound/chemical), the `compConcentration` (the concentration of the compound), and the `expType` are the most important variables in this dataset.
-
-A typical analysis with this data would be to run a dose-response analysis using a log-logistic model with estimates for the maximal, the minimal, the IC50 concentration and the slope at IC50. We will not go into the details but a good package to run such computations and create graphs in R is the `{drc}` package. [See:](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0146021) [and:](https://cran.r-project.org/web/packages/drc/index.html). In the exercise below we will create some visualizations using `{ggplot2}`.
-
-(A) Review the following Excel file in the `./data/CE.LIQ.FLOW.062_Tidydata.xlsx` <a href="https://github.com/DataScienceILC/tlsc-dsfb26v-20_workflows/raw/main/data/CE.LIQ.FLOW.062_Tidydata.xlsx" download> (it's here)</a>, by opening the file in Excel. See if you can spot anything peculiar about this file. Do not edit the file in any way. Just close it when you are done. (Annoyingly, Excel asks you to save your changes, even if you did not touch anything in the file.)
- 
-(B) Open the file in R, using the `{readxl}` package.
- 
-```{r, include=FALSE}
-celiqflow_062 <- readxl::read_xlsx(
-  here::here(
-    "data",
-    "CE.LIQ.FLOW.062_Tidydata.xlsx"
-  )
-)
-```
-
-(C) Inspect the data types of columns `RawData`, `compName` and `compConcentration`. What types would you expect from the experimental description above. Have the data types been correctly assigned during the importing of the data into R?
-
-```{r, include=FALSE}
-names(celiqflow_062)
-map(celiqflow_062, typeof)
-```
-
-(D) Create a graph displaying a scatterplot for the `CE.LIQ.FLOW.062_Tidydata.xlsx` data, for the different compounds and the varying concentrations. Put the `compConcentration` on the x-axis, the `DataRaw` counts on the y-axis and assign a colour to each level in `compName`. Assign a different symbol (`shape = `) to each level in the `expType` variable. Try fixing the labels of the x-axis so that we can read them.
-
-```{r,include=FALSE}
-celiqflow_062 %>%
-  ggplot(aes(x = compConcentration, 
-             y = RawData)) +
-  geom_point(aes(colour = compName,
-                 shape = expType)) +
-  toolboxr::rotate_axis_labels("x", 45)
-  
-```
-
-(E) When creating the plot under C), what happened with the ordering of the x-axis labels. Explain why this happens. Look at the data-type of the `compConcentration` column in the data again to find a clue.
-
-(F) Correct this and than look at the graph again. Use a log10 transformation on the x-axis to get a clear graph. Also, add a bit of `jitter` to the points in the graph so that points are not overlapping (Google "ggplot jitter" if needed).  
-```{r, include=FALSE}
-
-#  data-type of `compConcentration` to `numeric`
-
-celiqflow_062 %>%
-  mutate(compConcentration = as.numeric(compConcentration)) %>%
-  ggplot(aes(x = log10(compConcentration + 0.001), 
-             y = RawData)) +
-  geom_point(aes(colour = compName,
-                 shape = expType),
-             position = position_jitter(w = 0.05, h = 0)) +
-  toolboxr::rotate_axis_labels("x", 45)
-```
-
-Fill in:
-(G) The positive control for this experiments is .....
-(H) The negative control for this experiment is .....
-
-(I) Think about how you would analyze this experiment to learn whether there is indeed an effect of different concentrations on offspring count and whether the different compounds have a different curve (IC50). Write down you analysis as a step-wise plan.
-(J) Normalize the data for the `controlNegative` in such a way that the mean value for `controlNegative` is exactly equal to 1 and that all other values are expressed as a fraction thereof. Rerun your graphs with the normalized data. 
-(H) Why would you want to take the step under J?
-
+Maak [opdracht 4a](portfolio-toetsing.html/#reproducible-science) van de portfolio-opdrachten.
 </div>
 
 ## When things go terribly wrong
@@ -660,71 +596,11 @@ The journal can be found [here](https://f1000research.com/).
 Have a look at the special Bioconductor channel: https://f1000research.com/gateways/bioconductor
 
 
-## Portfolio assignment `r paste0(les, ".2")` {-}
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-**Open Peer Review**
-
-This exercise is about identifying reproducibility issues in a scientific publication. We use the criteria for reproduciblity that are publically available [via here](https://www.researchgate.net/publication/340244621_Reproducibility_and_reporting_practices_in_COVID-19_preprint_manuscripts)
-
-| Transparency Criteria| Definition       | Response Type|
-|---------|-------------------------------|----------|
-|Study Purpose |A concise statement in the introduction of the article, often in the last paragraph, that establishes the reason the research was conducted. Also called the study objective.| Binary| 
-|Data Availability Statement | A statement, in an individual section offset from the main body of text, that explains how or if one can access a study’s data. The title of the section may vary, but it must explicitly mention data; it is therefore distinct from a supplementary materials section.| Binary|
-|Data Location | Where the article’s data can be accessed, either raw or processed.| Found Value|
-|Study Location| Author has stated in the methods section where the study took place or the data’s country/region of origin.| Binary; Found Value|
-|Author Review| The professionalism of the contact information that the author has provided in the manuscript.|Found Value|
-|Ethics Statement | A statement within the manuscript indicating any ethical concerns, including the presence of sensitive data.|Binary|
-|Funding Statement| A statement within the manuscript indicating whether or not the authors received funding for their research.|Binary|
-Code Availability | Authors have shared access to the most updated code that they used in their study, including code used for analysis. |Binary|
-
-**Table clarification** The `Transparency Criteria` are criteria you need to score the article of your choice for. Read them carefully and discuss with another course participant if you do not understand them. 
-Each Tranparance criterion comes with a `Definition` that explains the criterion in more details. These descriptions are particularly helpful to understand what the criterium entails and what to look for in the article. The `Response Type` is the actual score  
-
-In this assisgment you need to find a scientific article yourself, using PubMed or another database or repository. Use only **Open Access** articles. Having an article in hand, go over the table above and score the article according the criteria. **<mark>Be sure to select a primary article that presents a study using data from experimental work </mark>**. This can be laboratory experiments or _in silico_ experiments. Reviews and meta analysis are not suitable for this assignment     
-
-To guide your search you can choose between these topics
-
- - "Coronavirus / COVID-19"
- - "The effects of compound on an organism / Toxicology"
- - "The effectiveness of a drug or treatment in an animal study"
- - "The effects of a compound investigated in a cell or organoid system"
- 
-**TIPS**
-
- - If you do not know where to start your literature search start here: https://www.biorxiv.org/
- - This assignment is not about the topic you select, so try to do that quickly
- - You may want to cheat and select an article that scores TRUE on the `Data Availability Statement`, because that enables you to use the this article again in one of the next assignments.
-
-**PART 1**
-_To complete part 1, execute activity A to G_ 
- 
-(A) Initiate an empty RMarkdown file in your RStudio environment and provide author and title (after the title of this exercise)
-(B) Search for a primary Open Access article on one of the above listed topics, using Pubmed Central
-(C) Read the article diagonally ("blader het even door") to check if is indeed a primary article describing emperical scientific findings. 
-(D) Include the reference to this article in your Rmd file
-(E) Score the article on the basis of the above 'Repita' criteria
-(F) Write an Rmarkdown report on your findings, including the table above and some information about the article such as general aim, short methods and results. If data is available, try including some  
-(G) Store the source Rmd and knitted HTML in a folder called 'Rmd' in your course RStudio project. You will need it again later in the course
-
-**PART 2** 
-_To complete this assignment you will have to execute activity H to P_
-
-Read [this abstract](https://www.r-bloggers.com/2022/03/newish-paper-share-the-code-not-just-the-data-a-case-study-of-the-reproducibility-of-jml-articles-published-under-the-open-data-policy/). We are going to try something similar, but on just one paper.
-
-(H) Choose one of the papers used in this study. Or, using the [OSF website](https://osf.io/), search for `R code paper` or for instance `R code paper AND tags:("COVID-19")` and select a project that involves a paper on anything (remotely) related to life sciences. 
-(I) Make sure you selected a project that has a dataset and R-code shared in the project environment. 
-(J) Have a look at the code. Describe in your own words what the code intents to achieve.
-(K) In terms of readibility of the code, how would you grade (1(very bad)-5(very good)) the code available.
-(L) Download the code and the data to a new RStudio project
-(M) Run the script or code that is available to reproduce at least 1 figure
-(N) When you encounter errors or flaws in the script, try fixing them and record your changes.
-(O) Taken together on a scale from 1 (very hard) to 5 (very easy), how much effort did it take you to reproduce the visualization from the project, report or article
-(P) Generate an RMarkdown script that contains the details on the project you selected, the code you used to create the visualization and your score for reproducibility.
-
-resource: https://www.researchgate.net/publication/340244621_Reproducibility_and_reporting_practices_in_COVID-19_preprint_manuscripts/fulltext/5e81f9fd92851caef4ae37ba/Reproducibility-and-reporting-practices-in-COVID-19-preprint-manuscripts.pdf
-
-</div> 
+Maak [opdracht 4b](portfolio-toetsing.html/#b.-een-artikel-beoordelen-op-reproduceerbaarheid) van de portfolio-opdrachten.
+</div>
  
 ## Resources
 

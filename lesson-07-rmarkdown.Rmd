@@ -931,56 +931,11 @@ Do you want to practice more? Try [this tutorial](https://owl.excelsior.edu/plag
 [see here](https://www.zotero.org/groups/)
 
 
-## Portfolio assignment `r paste0(les, " ")` {-}  
+## Portfolio assignment {-}  
 <div class="dagopdracht">
 
-**Portfolio assignment `r les`**
-
-A)
-
- - Make sure you have:
-    1. Two personal repositories on github: one for your portfolio, one for the regular exercises.
-    1. One repo in the projecticum organisation, that you share  with your partner.
-    1. Your local repositories are up to date with the main for all three of them.
-    1. A github project, with kanban board filled with issues connected to the projecticum repository.
-    1. One (separate!) .Rmd file for each of your projecticum assignments.
-    1. Three local (i.e. on your laptop) Rstudio projects: projecticum, portfolio and regular_assignments. (you may have given them other names, that's fine)
-
-
-B)
-
-  1. Make a new collection within Zotero for the projecticum. Place all pdf's you used till now in your folder (if you did not use any papers as source yet, find 3 papers on Pubmed now that you could use for your introduction.). 
-  1. Start a .Rmd named "introduction.Rmd" with a few lines introduction on your projecticum topic.
-  1. Include automatic inline references to the papers you used.
-  1. The bibliography will be placed at the end of the document. Provide an appropriate header.
-  
-NOTE! Now we will try collaborating using .bib or .json files. We are not entirely sure what will happen if you knit and merge bib/json files using the automatic header option. If you used that to quickly and conveniently get all the references in a .bib/.json file, you may want to change your header to something like this now, and update everytime you add a reference:
-
-```
-title: "Untitled" 
-output: html_document 
-bibliography: bibliography.bib
-```
-
-Or try if you can get it to work with the automatic option! We are curious to see what will happen.
-
-Either way:
-
-  1. Merge your work with that of your projecticum partner through github. Solve all the problems you encounter. If github does not want to merge .bib or .json files and you want a merged one, try [here](https://caltechlibrary.github.io/bibtex/webapp/bibmerge.html).
-  1. Find out how you can add websites as reference to Zotero.
-  1. In your portfolio, write at least 500 words of introduction for your projecticum project and use at least 5 references.
-
-
-
+Maak nu [opdracht 7](portfolio-toetsing.html/#bronvermelding) van de portfolio-opdrachten.
 </div>
-
-
-
-
-
-
-
-
 
 <!-- maybe later -->
 <!-- ## Summary -->

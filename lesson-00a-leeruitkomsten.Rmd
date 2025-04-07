@@ -1,0 +1,14 @@
+# Leeruitkomsten {.unnumbered}
+
+Aan het einde van de cursus Workflows kan de student:
+
+- een GitHub repository gebruiken om alle files die nodig zijn voor het reproduceren van een analyse/workflow te delen met anderen;
+- de data management principes toepassen op een eigen project;
+- een data analyse van iemand anders reproduceren;
+- de reproduceerbaarheid van een wetenschappelijke studie beoordelen en hierover rapporteren;
+- SQL toepassen om met relationele databases te werken;
+- een R package bouwen om zelfgeschreven R code reproduceerbaar te maken;
+- de gebruikte bronnen correct citeren met behulp van open source tools;
+- literate programming (Rmarkdown, inclusief het gebruik van parameters en in line code) inzetten voor het maken van data analyse rapporten;
+- een onderbouwd professioneel toekomstplan maken en aantonen dat er stappen zijn gemaakt met het leren van een nieuwe skill. 
+
