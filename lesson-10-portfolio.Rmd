@@ -1,11 +1,11 @@
 # Portfolio (toetsing)
 
 ```{r echo=FALSE}
-deadline_summatief <- "zondag 25 mei 2025 23.59 uur"
-deadline_formatief <- "donderdag 25 april 2025 23.59 uur"
-assessments <- "dinsdag 3 juni 2025"
-sql_assessment_1 <- "woensdag 7 mei 2025"
-sql_assessment_2 <- "vrijdag 16 mei 2025"
+deadline_summatief <- "zondag 4 januari 2026 23.59 uur"
+deadline_formatief <- "dinsdag 18 november 2025 23.59 uur"
+assessments <- "woensdag 7 januari 2026"
+sql_assessment_1 <- "dinsdag 25 november 2025"
+sql_assessment_2 <- "dinsdag 2 december 2025"
 ```
 
 
