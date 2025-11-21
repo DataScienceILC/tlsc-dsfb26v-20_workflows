@@ -8,11 +8,10 @@ knitr::opts_chunk$set(echo = TRUE, class.source="Rchunk", class.output="Rout")
 ![Comic by XKCD. Check out more exellent comics by XKCD [here](https://xkcd.com/), for example [this one!](https://xkcd.com/2464/)](https://imgs.xkcd.com/comics/exploits_of_a_mom.png)
 
 ## Relational data in tidyverse
-We spend quite some time now on learning how to visualise, analyse, and describe data. But where do we get the data? In DAUR2 we have seen how to [access data from the ](https://datascience.hu.nl/rsconnect/dsfb1-daur2-reader/lesson-4-entrez-combining-biological-datasets.html) and how to use [biomaRt to access ensembl and GEO(Gene Expression Omnibus)](https://datascience.hu.nl/rsconnect/dsfb1-daur2-reader/lesson-3-acquiring-biological-data-from-databases-biomart-geoquery.html). We used the  Bioconductor project, an open source software repository specifically for high-throughput biological assay data.
 
-We have practised a bit with combining data from different sources in DAUR2, and we will build on that experience in this lesson.
+We spend quite some time now on learning how to visualise, analyse, and describe data. But where do we get the data? In this lesson you will learn how to interact with databases using the SQL language.
 
-There is quite a lot of material today, but the exercises within the lesson are short. You won't be an absolute SQL wizard after this afternoon. We are aiming on giving you enough of a steady start with DBeaver and SQL to build on when you may encounter working with SQL in the future. But at times it will feel pretty cool, we promise!
+There is quite a lot of material in this lesson, but the exercises within the lesson are short. You won't be an absolute SQL wizard after this afternoon. We are aiming on giving you enough of a steady start with DBeaver and SQL to build on when you may encounter working with SQL in the future. But at times it will feel pretty cool, we promise!
 
 ### Relational data
 It is quite rare for a data analysis to use only one table of data. Suppose you investigate the effects of a certain drug on behaviour of rats in a maze. You may have blood levels of the drug at certain times, some automatic recording of movements, maybe you weighted them before every experiment, etc. You may enter some of these values in excel, but other values about the same rats will be stored in different formats or in different files, such as the video recordings or descriptive statistics of these video recordings (average time in maze, number of mistakes etc etc). Still, you will want to look at all this information combined. Collectively, these tables of data are called *relational data*.
