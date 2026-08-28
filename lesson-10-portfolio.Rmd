@@ -27,23 +27,23 @@ Het portfolio moet uiteindelijk ingeleverd worden **vóór `r deadline_summatief
 - Het portfolio is gemaakt met [bookdown](https://bookdown.org/) en de bookdownbestanden (o.a. Rmarkdown bestanden) staan in een GitHub repository. 
 - Er is een R package gemaakt en dit R package is beschikbaar gemaakt via een GitHub repository (zie opdracht 6 van de portfolio-opdrachten).
 - De GitHub repositories zijn toegankelijk voor de docenten (public repository of een private repository waarin de docenten leesrechten hebben).
-- Er is een e-mail verstuurd vóór de deadline naar de docenten met daarin de links naar het gehoste portfolio, de GitHub repository met de bookdown bestanden en de GitHub repository voor het R package. 
+- Het portfolio is ingeleverd via de opdracht in Canvas.
 
 ### Feedback op het portfolio {-} 
 
 Tijdens de meeste lessen van de cursus is er tijd om aan het portfolio te werken. Het is dan ook mogelijk om aan de docenten feedback te vragen. Zorg er dus voor dat je zelf bij de docenten aangeeft wanneer je graag feedback wilt en waarop. 
 
-Tijdens de cursus is er ook een formatief inlevermoment. Hiervoor is het de bedoeling dat je de tussentijdse versie portfolio **vóór `r deadline_formatief`** deelt met de docenten. De docenten kunnen dan in de lessen hierna feedback geven op je portfolio. 
+Tijdens de cursus is er ook een formatief inlevermoment. Hiervoor is het de bedoeling dat je de tussentijdse versie portfolio **vóór `r deadline_formatief`** deelt met de docenten via de opdracht in Canvas. De docenten kunnen dan in de lessen hierna feedback geven op je portfolio. 
 
 ### Plagiaat en het gebruik van Generatieve AI {-} 
 
 Zoals altijd is plagiaat (het gebruik/kopiëren van werk van anderen zonder bronvermelding) niet toegestaan. Het is ook niet toegestaan om je portfolio door anderen te laten maken. Je bent zelf verantwoordelijk voor de inhoud van je portfolio. Alle verdenkingen van plagiaat of andere vormen van fraude worden gemeld bij de Examencommissie van het ILC. 
 
-Natuurlijk is het wel toegestaan om informatie op het internet te gebruiken. Ook is het toegestaan om Generatieve AI tools (zoals ChatGPT of Co-pilot) te gebruiken. Voorwaarde voor het gebruik van deze hulpmiddelen is dat je aangeeft in het portfolio waar en waarvoor je gebruik hebt gemaakt van deze bronnen.
+Natuurlijk is het wel toegestaan om informatie op het internet te gebruiken. Ook is het toegestaan om Generatieve AI tools (zoals ChatGPT of Co-pilot) te gebruiken. Voorwaarde voor het gebruik van deze hulpmiddelen is dat je de code valideert en verifieert, en dat je dus verantwoordelijkheid kunt nemen voor het ingeleverde werk. Dit is iets wat de docenten tijdens de lessen en het mondelinge assessment vaststellen (zie hieronder).
 
 ### Assessment {-} 
 
-De cursus wordt afgesloten met een assessment. De assessments worden gehouden op **`r assessments`**. Hierin krijg je kort de tijd (15 minuten) om je portfolio toe te lichten en om vragen van de docenten te beantwoorden. Het assessment is vooral bedoeld om te toetsen of je jouw portfolio zelf hebt gemaakt (en om dus fraude uit te sluiten). 
+De cursus wordt afgesloten met een assessment. De assessments worden gehouden op **`r assessments`**. Hierin krijg je kort de tijd (15 minuten) om je portfolio toe te lichten en om vragen van de docenten te beantwoorden. Het assessment is vooral bedoeld om te toetsen of je jouw portfolio zelf hebt gemaakt (en om dus fraude uit te sluiten) en of je eigenaarschap en verantwoordelijkheid kunt tonen voor het ingeleverde werk.
 
 
 ## Het opzetten van je portfolio (GitHub, Bookdown en GitHub pages) {-} 
